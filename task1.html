@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            display: inline-block;
+            width:40px;
+            height:40px;
+            background-color: blue;
+            animation-name: colorchange;
+            animation-duration: 1.5s;
+            animation-iteration-count: 2;
+            border-radius: 80%;
+            position: relative;
+            top: 200px;
+            left:200px;
+            animation-timing-function: ease;
+            animation-direction: alternate-reverse;
+
+        }
+        .div2{
+            display: inline-block;
+            width:40px;
+            height:40px;
+            background-color: red;
+            animation-name: colorchange;
+            animation-duration: 1.5s;
+            animation-iteration-count: 2;
+            border-radius: 80%;
+            position: relative;
+            top: 200px;
+            left:200px;
+            animation-timing-function: ease-in;
+            animation-direction: alternate-reverse;
+        }
+        .div3{
+            display: inline-block;
+            width:40px;
+            height:40px;
+            background-color: yellow;
+            animation-name: colorchange;
+            animation-duration: 1.5s;
+            animation-iteration-count: 2;
+            border-radius: 80%;
+            position: relative;
+            top: 200px;
+            left:200px;
+            animation-timing-function: ease-out;
+            animation-direction: alternate-reverse;
+        }
+        .div4{
+            display: inline-block;
+            width:40px;
+            height:40px;
+            background-color: green;
+            animation-name: colorchange;
+            animation-duration: 1.5s;
+            animation-iteration-count: 2;
+            border-radius: 80%;
+            position: relative;
+            top: 200px;
+            left:200px;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes colorchange{
+           0%{ 
+                transform: translateX(0px) translateY(0px);
+                background-color: antiquewhite;
+            }
+            25%{
+                transform: translateY(-100px);
+                background-color: aliceblue;
+            }
+            /* 50%{
+                transform: translateX(0px) translateY(0px);
+                background-color: black;
+            }
+            75%{
+                transform: translateX(0px) translateY(0px);
+                background-color: olivedrab;
+            }
+            100%{
+                transform: translateX(0px) translateY(0px);
+                background-color: blue;
+            }
+            */
+        } 
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</body>
+</html>
